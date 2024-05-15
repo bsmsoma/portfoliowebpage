@@ -1,13 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    --defaultFont: "Montserrat", sans-serif;
+    --color1: #8ECAE6
+    
+    
 }
 body {
-    width: 80%;
-    max-width: 900px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+main {
+    width: 90%;
+    max-width: 1400px;
     min-width: 320px;
+    margin: 0 auto;
 }
 header {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+}
+.titlename {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--defaultFont);
+}
+.titlename p {
+    margin-left: 10px;
+    margin-top: 13.5px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    margin: 6px 15px 6px 10px;
+    list-style: none;
+}
+.iconsnavbar a {
+    color: #333;
+    font-size: 1.4em;
+}
+.icondivider {
+    width: 2px;
+    height: 1.6em;
+    background-color: rgba(37, 36, 36, 0.589);
+}
+.imgcontainer > img {
+    width: 300px;
+    height: 300px;
+}
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;;
+    max-width: 1400px;
+    min-width: 320px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 50px;
+}
+.welcome-section  h1, h3, p{
+    margin: 10px auto;
+    font-family: var(--defaultFont);
+}
+.aboutme {
+    width: 40%;
+    min-width: 320px;
+
+}
+.aboutme > h1 {
+    font-size: 2em;
+}
+.aboutme > h3 {
+    font-size: 1.3em;
+}
+.aboutme > p {
+    text-align: justify;
+}
+.pagedivider {
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0 auto;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    position: absolute;
+    bottom: 0;
+    width: 70%;
 }
