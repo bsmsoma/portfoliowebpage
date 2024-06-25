@@ -15,6 +15,7 @@ body {
 
 main {
     width: 90%;
+    height: 100vh;
     max-width: 1400px;
     min-width: 320px;
     margin: 0 auto;
@@ -27,26 +28,21 @@ header {
     justify-content: space-between;
 }
 
-.titlename {
+.project-title {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--defaultFont);
 }
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
 
 .titlename p {
     margin-left: 10px;
     margin-top: 13.5px;
-}
-
-.menu-icon {
-    display: none; /* Esconde o ícone em tamanhos de tela maiores */
-    cursor: pointer;
-}
-
-/* Mostra o ícone do menu quando o checkbox está marcado */
-#menu-toggle:checked + .navbar .menu-icon {
-    display: block;
 }
 
 ul {
@@ -81,13 +77,12 @@ li {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    ;
     max-width: 1400px;
     min-width: 320px;
-    height: 500px;
+    height: 400px;
     width: 100%;
     margin-top: 20px;
-    padding: 50px;
+    padding: 20px;
     margin: 0 auto;
 }
 
@@ -114,6 +109,39 @@ p {
 .aboutme>p {
     text-align: justify;
 }
+/* PROJECTS AREA */
+.projectarea {
+    max-width: 1400px;
+    min-width: 320px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: var(--defaultFont);
+}
+.containerprojects {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+}
+.container {
+    border-radius: 3px;
+    border: 1px solid gray;
+    height: 350px;
+    width: 330px;
+    text-align: center;
+}
+.cards {
+    padding: 6px;
+    border-radius: 3px;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* END OF PROJECTS AREA */
 
 .pagedivider {
     width: 100%;
@@ -149,6 +177,9 @@ footer {
 
     .welcome-section {
         padding: 5px;
+    }
+    .projects {
+
     }
 
     .aboutme {
