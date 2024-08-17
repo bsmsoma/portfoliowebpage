@@ -19,49 +19,42 @@ main {
     min-width: 320px;
     margin: 0 auto;
 }
-
+/* NAVBAR */
 header {
+    max-width: 1400px;
+    min-width: 320px;
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .project-title {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--defaultFont);
+    padding: 8px;
 }
-
-
-.titlename p {
-    margin-left: 10px;
-    margin-top: 13.5px;
-}
-
 ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 li {
     margin: 6px 15px 6px 10px;
     list-style: none;
 }
-
 .iconsnavbar a {
     color: #333;
     font-size: 1.4em;
 }
-
 .icondivider {
     width: 2px;
     height: 1.6em;
     background-color: rgba(37, 36, 36, 0.589);
 }
+/* END OF THE NAVBAR */
 
 .imgcontainer>img {
     width: 300px;
@@ -72,14 +65,14 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     max-width: 1400px;
     min-width: 320px;
     height: 400px;
     width: 100%;
     margin-top: 20px;
     padding: 20px;
-    margin: 0 auto;
+    margin: 24px auto;
+    min-height: 400px;
 }
 
 .welcome-section h1,
@@ -107,12 +100,13 @@ p {
 }
 
 /* PROJECTS AREA */
+
 .projectarea {
     max-width: 1400px;
     min-width: 320px;
     width: 100%;
     padding: 10px;
-    margin: 16px auto;
+    margin: 8px auto;
     font-family: var(--defaultFont);
 }
 
@@ -122,6 +116,7 @@ p {
     justify-content: flex-start;
     width: 100%;
     margin: 10px auto;
+    min-height: 400px;
 }
 
 .container {
@@ -163,7 +158,7 @@ footer {
     margin: 10px auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 420px) {
     header {
         width: 95%;
     }
@@ -174,7 +169,8 @@ footer {
     }
 
     .welcome-section {
-        padding: 5px;
+        margin: 46px auto;
+        flex-direction: column;
     }
 
     .aboutme {
@@ -194,5 +190,18 @@ footer {
         margin: 0 auto;
         font-size: 1em;
         justify-content: space-between;
+    }
+    .projectarea {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    .projectarea h2 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .footerarea {
+        justify-content: space-between;
+        text-align: center;
     }
 }
