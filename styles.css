@@ -36,6 +36,9 @@ header {
     font-family: var(--defaultFont);
     padding: 8px;
 }
+.project-title > h2, h4, h6 {
+    padding: 8px;
+}
 ul {
     display: flex;
     justify-content: space-between;
