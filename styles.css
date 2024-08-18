@@ -165,10 +165,13 @@ footer {
     header {
         width: 95%;
     }
-
+    
     .project-title {
         flex-direction: column;
         padding: 16px;
+    }
+    .project-title > h2, h4, h6 {
+        padding: 4px;
     }
 
     .welcome-section {
